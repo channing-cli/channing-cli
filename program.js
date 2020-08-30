@@ -1,16 +1,19 @@
 const program = require("commander");
+const templateMap = require('./templateMap')
+
+
 
 const download = require("download-git-repo");
 const ora = require("ora");
 const chalk = require("chalk");
 const logSymbols = require("log-symbols");
 
-function programStart() {
+function programStart(template) {
   program.version("0.1.0");
 
   program
     .command("create <project>")
-    .description("初始化项目模板~")
+    .description(`初始化项目模板: ${template} ~`)
     .action(function (project) {
       console.log(chalk.yellow(`开始创建项目： ${project} ~`));
       // 在下载前提示
@@ -30,8 +33,10 @@ function programStart() {
        * @project       项目名称
        *
        */
-      const downloadUrl =
-        "https://github.com:channing-cli/vue-template-default#master";
+      const downloadUrl = templateMap[template]
+
+
+
       download(downloadUrl, project, { clone: true }, (err) => {
         if (err) {
           spinner.fail(chalk.red("下载模板失败，失败原因：" + err));

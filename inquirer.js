@@ -9,14 +9,18 @@ async function inquirerStart() {
       message: "选择一个需要创建的vue工程化模板",
       choices: [
         {
-          name: "default (dart-sass,babel,router,vuex,eslint)",
+          name: "vue-default (dart-sass,babel,router,vuex,eslint)",
           value: "vue-template-default",
         },
         {
-          name:
-            "default-with-ts (typescript,dart-sass,babel,router,vuex,eslint)这个还没放上去",
-          value: "vue-template-default-with-ts",
+          name: "mock-server (用于模拟接口数据的本地服务模板)",
+          value: "mock-server",
         },
+        // {
+        //   name:
+        //     "default-with-ts (typescript,dart-sass,babel,router,vuex,eslint)这个模板还没放上去",
+        //   value: "vue-template-default-with-ts",
+        // },
       ],
     },
   ];

@@ -14,9 +14,10 @@ const { programStart } = require("./program");
 async function start() {
   console.log(logSymbols.info, chalk.yellow(" 😈😈😈 启动channing-cli脚手架工具···"));
 
-  await inquirerStart();
+  const res = await inquirerStart();
+  const {template} = res
 
-  await programStart();
+  await programStart(template);
 
 }
 
