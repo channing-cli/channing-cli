@@ -33,7 +33,7 @@ function programStart(template) {
        * @project       项目名称
        *
        */
-      const downloadUrl = templateMap[template]
+      const downloadUrl = templateMap.get(template)
 
 
 
@@ -58,4 +58,4 @@ function programStart(template) {
   program.parse(process.argv);
 }
 
-module.exports = { programStart };
+module.exports = programStart ;

@@ -25,9 +25,8 @@ async function inquirerStart() {
     },
   ];
   const answers = await inquirer.prompt(promptList);
-  console.log("answers"); // 返回的结果
   console.log(chalk.blue('你选择的模板是: '),chalk.green(answers.template)); // 返回的结果
   return answers;
 }
 
-module.exports = { inquirerStart };
+module.exports = inquirerStart ;

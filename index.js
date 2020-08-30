@@ -6,10 +6,10 @@ const chalk = require("chalk");
 const logSymbols = require("log-symbols");
 
 // 命令行用户交互(获取模板选项)
-const { inquirerStart } = require("./inquirer");
+const inquirerStart  = require("./inquirer");
 
 // 创建模板程序
-const { programStart } = require("./program");
+const programStart  = require("./program");
 
 async function start() {
   console.log(logSymbols.info, chalk.yellow(" 😈😈😈 启动channing-cli脚手架工具···"));
