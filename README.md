@@ -50,6 +50,9 @@ ___
 
 ___
 # 更新
+**2020.9.1**: 
+* 加入了一个node流程去根据用户输入的项目名修改```package.json```中的```name```（name与html header中的title相关）
+
 **2020.8.30**: 
 * 补充了js版本的vue的工程化模板，主要包括像vuex的使用demo，api和service的包装，axios的实例配置封装，拦截器处理，加入了简单的filter和mixin的demo等等。
 * 加入了```mock-server```模板，主要是用于在本地起一个简单的node服务去模拟接口数据的请求，路由模块化已经配置过了，拉下来可以快速编写自己想要的接口。
