@@ -11,7 +11,7 @@ const {chooseTemplate} = require('./inquirers')
 
 function start() {
   console.log(chalk.rgb(216, 27, 96)('\n 😈😈😈  雷猴啊, 靓仔~~'))
-  console.log(chalk.cyanBright(' 🦄🦄🦄  靓仔正在使用channing2-cli命令行工具...\n'))
+  console.log(chalk.cyanBright(' 🦄🦄🦄  靓仔正在使用channing-cli命令行工具...\n'))
 
   program.version(require('./package.json').version) // 输出版对应的版本号
 
