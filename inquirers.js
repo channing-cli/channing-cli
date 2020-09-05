@@ -14,6 +14,10 @@ async function chooseTemplate(){
         {
           name: "mock-server (用于模拟接口数据的本地node服务模板)",
           value: "mock-server",
+        },
+        {
+          name: "vue-normal-antd (js版本的vue全家桶工程化模板 + 按需引入的antd)",
+          value: "vue-normal-antd",
         }
       ],
     },
