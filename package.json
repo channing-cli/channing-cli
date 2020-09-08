@@ -1,6 +1,6 @@
 {
   "name": "channing-cli",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "description": "一个用于快速创建工程化Vue模板的脚手架命令行工具",
   "main": "index.js",
   "scripts": {
