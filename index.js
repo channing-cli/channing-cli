@@ -2,15 +2,15 @@
 
 const {program} = require('commander') // 引入
 const download = require('download-git-repo')
-const templateMap = require('./templateMap')
+const templateMap = require('./src/templateMap')
 const ora = require('ora')
 const chalk = require('chalk');
 const fs = require('fs')
 
-const {modifyPackage} = require('./modifyFiles')
+const {modifyPackage} = require('./src/modifyFiles')
 
 
-const {chooseTemplate} = require('./inquirers')
+const {chooseTemplate} = require('./src/inquirers')
 
 function start() {
     console.log(chalk.rgb(216, 27, 96)('\n 😈😈😈  雷猴啊, 靓仔~~'))

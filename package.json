@@ -1,7 +1,7 @@
 {
   "name": "channing-cli",
-  "version": "1.4.1",
-  "description": "一个用于快速创建工程化Vue模板的脚手架工具",
+  "version": "1.5.1",
+  "description": "一个用于快速创建工程化Vue模板的脚手架命令行工具",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
